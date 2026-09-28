@@ -105,3 +105,8 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor ejecutándose en http://localhost:${PORT}`);
 });
+
+// Ruta de prueba para verificar que el servidor está activo
+app.get('/', (req, res) => {
+  res.send('🟢 Servidor de Telegram Arcade activo y respondiendo correctamente.');
+});
